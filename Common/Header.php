@@ -19,8 +19,8 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" style="padding: 10px" href="http://www.algonquincollege.com">
-              <img src="Common/img/AC.png" 
-                   alt="Algonquin College" style="max-width:100%; max-height:100%;"/>
+              <img src="Common/img/logo.png" 
+                   alt="Example" style="max-width:100%; max-height:100%;"/>
           </a>    
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
