@@ -45,7 +45,7 @@ include("Common/Header.php");
 
     function clearInput() {
         accountInput.innerHTML = "";
-        passwdInput.innerHTML = "";
+        passwdInput.innerHTML = "hello world";
     }
 
     // Evenlistener when the submit btn is clicked: see if it contains any special characters
