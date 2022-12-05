@@ -58,12 +58,18 @@ if (isset($accountInput)) {
 }
 
 ?>
+<style>
+    input, button{
+        margin-top:10px;
+    }
+</style>
 
 <script type="text/javascript" src="jq.js"></script>
 
 <body>
     <div class="container">
         <h1>Log in </h1>
+        <small style="display: none; color:red" id="errorMessage">The input cannot contain any special characters</small>
         <div class="row">
             <div class="col-md-10 text-center">
                 <form action="index.php" method="post" id="Form">
@@ -73,18 +79,19 @@ if (isset($accountInput)) {
                             <td><input type="text" name="account" class="account" id="account"></td>
 
                         </tr>
+                        <tr></tr>
                         <tr>
-                            <th>Password</th>
+                            <th  style=" padding-right: 10px;">Password </th>
                             <td><input type="text" name="password" class="password" id="password"></td>
                         </tr>
                         <tr>
 
                             <td>
-                                <input type="submit" name="submit" value="submit" class="btn-primary btn" style="margin-right: 1.5rem ">
-                                <input type="reset" name="reset" value="Reset" class="btn-primary btn" onclick="clearInput()">
+                                
                             </td>
                             <td>
-                                <small style="display: none; color:red" id="errorMessage">The input cannot contain any special characters</small>
+                                <input type="submit" name="submit" value="submit" class="btn-primary btn" style="margin-right: 1.5rem ">
+                                <input type="reset" name="reset" value="Reset" class="btn-primary btn" onclick="clearInput()">
                             </td>
                         </tr>
                     </table>
